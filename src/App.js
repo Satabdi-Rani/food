@@ -1,25 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Cart from './components/Cart/Cart';
+import Banner from './components/Banner/Banner';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-sky-950">
+      <Header></Header>
+      <Banner></Banner>
+      <Cart></Cart>
     </div>
   );
 }
+
+function addItem(){
+   const addItems = document.getElementById('image1_id');
+   console.log(addItems);
+}
+
+addItem();
 
 export default App;
